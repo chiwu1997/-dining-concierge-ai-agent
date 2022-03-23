@@ -18,9 +18,10 @@ Chi Wu, Wanqi Wu
 4. Yelp APIs called to collect random restaurants from Manhattan area
 5. DynamoDB used to store restaurant information
 6. Opensearch Service instance created for indexing
-7. (1) lambda function 0: used to call and send user utterances to AWS LEX service, and return LEX response to the user
-   (2) lambda function 1: used to extract useful fields as well as validate the user utterances, send data to SQS
-   (3) lambda function 2: used to retrieve recommendated restaurants information from Opensearch and DynamoDB, send data to SNS
+7. Lambda Functions
+	* LF0: used to call and send user utterances to AWS LEX service, and return LEX response to the user
+   * LF1: used to extract useful fields as well as validate the user utterances, send data to SQS
+   * LF2: used to retrieve recommendated restaurants information from Opensearch and DynamoDB, send data to SNS
 8. SMS used to send recommendation results to users
 
 ## Example Message
